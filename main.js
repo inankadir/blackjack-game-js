@@ -1,18 +1,16 @@
 let mesaj = "";
-kartlar = [];
+let kartlar = [];
+let toplam = birinciKart + ikinciKart;
 let kartlarEl = document.getElementById("kartlar-el");
 let toplamEl = document.getElementById("toplam-el");
 let mesajEl = document.getElementById("mesaj-el");
-let black = false;
-let oyundisi = false;
 
 function oyunaBasla() {
   let birinciKart = getRandomCard();
   let ikinciKart = getRandomCard();
-  let kartlar = [birinciKart, ikinciKart];
-  let toplam = birinciKart + ikinciKart;
-  let black = false;
-  let oyundisi = false;
+  kartlar = [birinciKart, ikinciKart];
+  black = false;
+  oyundisi = false;
   oyunRender();
 }
 
